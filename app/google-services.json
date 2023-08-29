@@ -1,41 +1,70 @@
 {
   "project_info": {
-    "project_number": "233671873617",
-    "project_id": "mindlinks-9e0b3",
-    "storage_bucket": "mindlinks-9e0b3.appspot.com"
+    "project_number": "188480570477",
+    "project_id": "mindlinks-7a6bf",
+    "storage_bucket": "mindlinks-7a6bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:233671873617:android:657ba820297a3af6d59470",
+        "mobilesdk_app_id": "1:188480570477:android:a39f01aee947f8f104ab64",
         "android_client_info": {
-          "package_name": "kr.com.mindlinks"
+          "package_name": "kr.co.mindlinks"
         }
       },
       "oauth_client": [
         {
-          "client_id": "233671873617-bob1o8gc5avcnphv4s4ehs6ic8p6h45j.apps.googleusercontent.com",
+          "client_id": "188480570477-g8ardsgak6pveeevcund3oso8pcikige.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "kr.com.mindlinks",
+            "package_name": "kr.co.mindlinks",
             "certificate_hash": "e1b9dfd0ca7cd9fe8eaef1bae7ab8036f61bdb3f"
           }
         },
         {
-          "client_id": "233671873617-23maqkjkol1oq7d98ejqg2rakig3qdu9.apps.googleusercontent.com",
+          "client_id": "188480570477-t8lsic2fdppo0rbro49jg1651dkjg2no.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0d6sBqeRhXJ9HxEj3NROh1DC82rPD8I8"
+          "current_key": "AIzaSyCy-VIC4faQKTZEwm-YkViQ4eGRTSlC58s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "233671873617-23maqkjkol1oq7d98ejqg2rakig3qdu9.apps.googleusercontent.com",
+              "client_id": "188480570477-t8lsic2fdppo0rbro49jg1651dkjg2no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188480570477:android:d12b2fe9456df6da04ab64",
+        "android_client_info": {
+          "package_name": "kr.com.mindlinks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188480570477-t8lsic2fdppo0rbro49jg1651dkjg2no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy-VIC4faQKTZEwm-YkViQ4eGRTSlC58s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188480570477-t8lsic2fdppo0rbro49jg1651dkjg2no.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-package kr.com.mindlinks
+package kr.co.mindlinks
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -110,9 +110,9 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
             //오레오보다 같거나 크면
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
 
-                webView.loadUrl("https://ml.hl-soft.co.kr/user")
+                webView.loadUrl("https://mindlinks.co.kr/user")
             }else{
-                webView.loadUrl("https://ml.hl-soft.co.kr/user")
+                webView.loadUrl("https://mindlinks.co.kr/user")
             }
 
             //https://mindlinks.co.kr/user

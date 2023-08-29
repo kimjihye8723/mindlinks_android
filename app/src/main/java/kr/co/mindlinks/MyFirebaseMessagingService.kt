@@ -1,4 +1,4 @@
-package kr.com.mindlinks
+package kr.co.mindlinks
 
 import android.app.Notification
 import android.app.NotificationChannel

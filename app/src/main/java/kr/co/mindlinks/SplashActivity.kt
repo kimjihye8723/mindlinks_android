@@ -1,4 +1,4 @@
-package kr.com.mindlinks
+package kr.co.mindlinks
 
 import android.content.Intent
 import android.os.Bundle

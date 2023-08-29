@@ -1,4 +1,4 @@
-package kr.com.mindlinks
+package kr.co.mindlinks
 
 import org.junit.Test
 

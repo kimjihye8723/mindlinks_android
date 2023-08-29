@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project-Ing/2023 MindLInks/05. mindlinks (2)/05. mindlinks/00.mindLink_android/00.mindLink_android/app/src/main/res/layout/activity_main.xml" value="0.2658514492753623" />
+        <entry key="..\:/Project-Ing/2023 MindLInks/05. mindlinks (2)/05. mindlinks/00.mindLink_android/00.mindLink_android/app/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="..\:/Project-Ing/2023 MindLInks/05. mindlinks (2)/05. mindlinks/00.mindLink_android/00.mindLink_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1955" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

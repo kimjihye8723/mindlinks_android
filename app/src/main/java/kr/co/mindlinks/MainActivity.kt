@@ -26,6 +26,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
@@ -145,7 +146,10 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
                             if(photoFile != null){
                                 photoPath = "file:${photoFile.absolutePath}"
-                                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile))
+                                takePictureIntent.putExtra(
+                                    MediaStore.EXTRA_OUTPUT,
+                                    FileProvider.getUriForFile(this@MainActivity, BuildConfig.APPLICATION_ID + ".provider", photoFile)
+                                )
                             }
                             else takePictureIntent = null
                         }
@@ -160,7 +164,7 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
                             if(videoFile != null){
                                 videoPath = "file:${videoFile!!.absolutePath}"
-                                takeVideoIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(videoFile))
+                                takeVideoIntent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(this@MainActivity, BuildConfig.APPLICATION_ID + ".provider", videoFile) )
                                 takeVideoIntent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1)
                                 // takeVideoIntent.putExtra( MediaStore.EXTRA_SIZE_LIMIT, 15000000L ); //about 14Mb
                                 takeVideoIntent.putExtra(
@@ -192,7 +196,9 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
                         chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, intentArray)
                         launcher.launch(chooserIntent)
                     }
-                    catch (e : Exception){ }
+                    catch (e : Exception){
+                        Log.d(TAG, e.toString())
+                    }
                     return true
                 }
 
@@ -398,7 +404,7 @@ class MainActivity : AppCompatActivity(), DialogInterface.OnClickListener {
         var builder = AlertDialog.Builder(this)
         builder.setTitle("알 림")
         builder.setMessage(message)
-
+        builder.setCancelable(false)
         // 버튼 클릭 이벤트
         var listener = DialogInterface.OnClickListener { _, clickEvent ->
             when (clickEvent) {
